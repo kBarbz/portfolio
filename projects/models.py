@@ -7,3 +7,5 @@ class Project(models.Model):
     description = models.TextField()
     technology = models.CharField(max_length = 20)
     image = models.FilePathField(path="static/img")
+    github = models.URLField()
+    app = models.URLField()

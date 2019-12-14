@@ -8,6 +8,20 @@
         <img src="\{{ project.image }}" alt="" width="100%">
     </div>
     <div class="col-md-4">
+      <div class="row" style="padding-bottom:10px">
+        <div class="col-md-4">
+        <a href="{{ project.github }}"
+           class="btn btn-primary">
+            Source Code
+        </a>
+        </div>
+        <div class="col-md-8">
+        <a href="{{ project.app }}"
+           class="btn btn-primary">
+            App
+        </a>
+        </div>
+      </div>
         <h5>About the project:</h5>
         <p>{{ project.description|linebreaks }}</p>
         <br>

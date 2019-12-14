@@ -7,10 +7,10 @@
 {% for project in projects %}
     <div class="col-md-4">
         <div class="card mb-2">
-            <img class="card-img-top" src="{{ project.image }}">
+            <img class="card-img-top" width="auto" height="300px" src="{{ project.image }}">
             <div class="card-body">
                 <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description|linebreaks }}</p>
+                <p class="card-text">{{ project.description|linebreaks|slice:":70"  }}</p>
                 <a href="{% url 'project_detail' project.pk %}"
                    class="btn btn-primary">
                     Read More
